@@ -32,7 +32,7 @@ SECRET_KEY = os.getenv('SECRET_KEY','%^h33&ue$@=*eys716-(iw6@otu(%%a7eu@dyf26&*n
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'https://mathtools.azurewebsites.net','https://www.mathtools.live','mathtools.azurewebsites.net','http://mathtools.azurewebsites.net','http://www.mathtools.live','www.mathtools.live'
+    'https://mathtools.azurewebsites.net','https://www.mathtools.live','mathtools.azurewebsites.net','http://mathtools.azurewebsites.net','http://www.mathtools.live','www.mathtools.live','127.0.0.1'
 ]
 
 
@@ -162,7 +162,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 
-STATIC_URL = '/static/'
+STATIC_URL = '/static/css/'
 STATICFILES_DIRS = [
 	os.path.join(BASE_DIR, "static")
 ]
