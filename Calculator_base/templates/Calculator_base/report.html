@@ -1,0 +1,81 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block meta %}
+    <meta name="description" content="Quadratic Equation Calculator. The best calculator to find roots/solutions for any quadratic equation. Standard form for Quadratic equation is also provided. ">
+    <meta name="keywords" content="calculation, Calculator, regular Calculator, math, algebra, calculus, mathematics, calci, scientific calculator, mathtools, mathstools, math tools, quadratic equation calculator graph, quadratic approximation calculator, quadratic regression calculator, quadratic calculator factoring, calculator for quadratic formula, quadratic formula on a calculator, roots of quadratic equation calculator, quadratic equation solver, quadratic formula solver ,quadratic equation, equations, roots of quadratic equation, standard form of quadratic equation, solution for quadratic equation, math tools, calculation, Calculator, regular Calculator, math, algebra, calculus, mathematics, calci, scientific calculator">
+{% endblock %}
+
+{% block title %}
+<title>Mathtools - Report an issue</title>
+{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{% static 'css/report.css' %}">
+{% endblock stylesheets %}
+
+
+{% block content %}
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12 col-md-5 col-sm-6 col-lg-6">
+                <div class="one">
+                    <div class="card second-card">
+                        <div class="card-body">
+                            <h1 class="card-title">Report an issue</h1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-7 col-lg-6">
+                <div class="two">
+                    <div class="card">
+                        <div class="card-body">
+                            <form name="form" action="{% url 'report' %}" method="POST">
+                                {% csrf_token %}
+                                <div>
+                                    <input type="button" class="name-btn" value="First Name:">
+                                    <input type="button" class="name-btn" value="Last Name:" >
+                                </div>
+                                <div>
+                                    <input type="text" class="textarea" placeholder="Ex: Bob" name="first_name" id="name" required>
+                                    <input type="text" class="textarea" placeholder="Ex: Marshal" name="last_name" id="name" required>
+                                </div>
+                                <div>
+                                    <input type="button" class="name-btn"  value="Email:">
+                                </div>
+                                <div>
+                                    <input type="email" class="textarea" name="email" placeholder="Ex: bob@example.com" id="subject" required>
+                                </div>
+                                <div>
+                                    <input type="button" class="name-btn" value="Subject:">
+                                </div>
+                                <div>
+                                    <input type="text" class="textarea" name="subject" placeholder="Ex: bob's name?" id="subject" required>
+                                </div>
+                                <div>
+                                    <input type="button" class="name-btn" value="Description:">
+                                </div>
+                                <div>
+                                    <textarea type="text" class="textarea" id="description" placeholder="Ex: bob's name is bob." name="desc" required></textarea>
+                                </div>
+                                <div>
+                                    <button value="Submit" class="btn submit-btn" onclick="reportAlert()">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="{% static 'js/report.js' %}"></script>
+
+{% endblock %}

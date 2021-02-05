@@ -1,0 +1,81 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block meta %}
+    <!-- Primary Meta Tags -->
+
+<meta name="title" content="Mathtools - Django Secret Key Generator">
+<meta name="description" content="Django Secret Key Generator. This is a 50 letters string generator which is used as a secret key for django webapps.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.mathtools.live/django-secret-key">
+<meta property="og:title" content="Mathtools - Django Secret Key Generator">
+<meta property="og:description" content="Django Secret Key Generator. This is a 50 letters string generator which is used as a secret key for django webapps.">
+<meta property="og:image" content="">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.mathtools.live/django-secret-key">
+<meta property="twitter:title" content="Mathtools - Django Secret Key Generator">
+<meta property="twitter:description" content="Django Secret Key Generator. This is a 50 letters string generator which is used as a secret key for django webapps.">
+<meta property="twitter:image" content="">
+    <meta name="keywords" content="generate django secret key online,django generate secret key function,django secret key production, django key generator, django secret key generator">
+{% endblock %}
+
+{% block title %}
+<title>Mathtools - Django Secret Key Generator</title>
+{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="{% static 'css/dsk_style.css' %}">
+{% endblock stylesheets %}
+
+
+{% block content %}
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12 col-md-5 col-sm-6 col-lg-6">
+                <div class="one">
+                    <div class="card second-card">
+                        <div class="card-body">
+                            <h1 class="card-title">Django Secret Key Generator</h1>
+                            <h3 class="instructions">Instructions:</h3>
+                            <ul class="instructions">
+                                <li>Use this to generate secret key for your django webapps.</li>
+                                <li>Location for Secret Key : projectname/settings.py.</li>
+                                <li>Press the Copy button to copy entire key.</li>
+                                <li>Please report for any issue.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-7 col-lg-6">
+                <div class="two">
+                    <div class="card">
+                        <div class="card-body">
+                            <form name="form">
+                                <div>
+                                    <input type="text" class="variable-field" name="keyfield"
+                                        id="key" value = '' >
+                                        <input type="button" id="Copybtn" value="Copy" >
+                                <input type="button" class="submit-btn" name="textarea" value="Generate" onclick="makeid(51)">
+                               </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script src="{% static 'js/dsk_generator_script.js' %}"></script>
+{% endblock %}

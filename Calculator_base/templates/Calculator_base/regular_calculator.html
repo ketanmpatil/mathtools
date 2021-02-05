@@ -1,0 +1,107 @@
+{% extends 'base.html'%}
+{% load static %}
+
+{% block meta %}
+  <!-- Primary Meta Tags -->
+
+<!-- Primary Meta Tags -->
+
+<meta name="title" content="Mathtools - Regular Calculator">
+<meta name="description" content="Regular Calculator. The best and fastest calculator with high and brilliant user interface and instructions to use.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.mathtools.live/regular-calculator">
+<meta property="og:title" content="Mathtools - Regular Calculator">
+<meta property="og:description" content="Regular Calculator. The best and fastest calculator with high and brilliant user interface and instructions to use.">
+<meta property="og:image" content="">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.mathtools.live/regular-calculator">
+<meta property="twitter:title" content="Mathtools - Regular Calculator">
+<meta property="twitter:description" content="Regular Calculator. The best and fastest calculator with high and brilliant user interface and instructions to use.">
+<meta property="twitter:image" content="">
+  <meta name="keywords" content="online calculator with fractions,online calculator for fractions,regular calculator,mathtools scientific calculator">
+{% endblock %}
+
+{% block title %}
+    <title>Mathtools - Regular Calculator</title>
+{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{% static 'css/regular_style.css' %}">
+{% endblock stylesheets %}
+
+{% block content %}
+
+
+<div class="container-fluid ">
+  <div class="row">
+    <div class="col-12 col-md-6 col-lg-6">
+      <div class="one">
+        <div class="card second-card">
+          <div class="card-body">
+            <h1 class="card-title">Regular Calculator</h1>                 
+            <h6>Instructions:</h6>
+            <ul class="instructions">
+              <li>First field shows the entries.</li>
+              <li>Second field shows the answer.</li>
+              <li>DEL is used to delete a number.</li>
+              <li>AC stands for All Clear.</li>
+              <li>Please report for any issue.</li>
+            </ul>
+            
+          </div>
+        </div>           
+      </div>
+    </div>     
+    <div class="col-12 col-md-6 col-lg-6">
+      <div class="two">
+        <div class="card">
+          <div class="card-body">
+            <form name="form">
+              <input type="text" class="textview" name="textview" disabled>
+              <input type="text" class="textarea" name="textarea" disabled>
+              <div>
+                <input type="button" value="7" class="numerics" onclick="insert(7)">
+                <input type="button" value="8" class="numerics" onclick="insert(8)">
+                <input type="button" value="9" class="numerics" onclick="insert(9)">
+                <input type="button" value="-" class="numerics" onclick="insert('-')">
+              </div>
+              <div>
+                <input type="button" value="4" class="numerics" onclick="insert(4)">
+                <input type="button" value="5" class="numerics" onclick="insert(5)">
+                <input type="button" value="6" class="numerics" onclick="insert(6)">
+                <input type="button" value="+" class="numerics" onclick="insert('+')">
+              </div>
+              <div>
+                <input type="button" value="1" class="numerics" onclick="insert(1)">
+                <input type="button" value="2" class="numerics" onclick="insert(2)">
+                <input type="button" value="3" class="numerics" onclick="insert(3)">
+                <input type="button" value="x" class="numerics" onclick="insert('*')">
+              </div>
+              <div>
+                <input type="button" value="DEL" class="numerics" onclick="del()">
+                <input type="button" value="0" class="numerics" onclick="insert(0)">
+                <input type="button" value="." class="numerics" onclick="insert('.')">
+                <input type="button" value="/" class="numerics" onclick="insert('/')">
+              </div>
+              <div>
+                <input type="button" value="AC" class="numerics" onclick="ac()">
+                <input type="button" value="(" class="numerics" onclick="insert('(')">
+                <input type="button" value=")" class="numerics" onclick="insert(')')">
+                <input type="button" value="=" class="numerics" onclick="equal()">
+              </div>
+            </form>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{% static 'js/regular_script.js' %}"></script>
+
+{% endblock %}

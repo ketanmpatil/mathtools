@@ -1,0 +1,108 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block meta %}
+
+    <!-- Primary Meta Tags -->
+    <!-- Primary Meta Tags -->
+
+<meta name="title" content="Mathtools - BMI Index Calculator">
+<meta name="description" content="Mathtools's BMI Index Calculator. Body Mass Index  is a value derived from the mass and height of a person. The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m², resulting from mass in kilograms and height in metres.">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.mathtools.live/bmi-index-calculator">
+<meta property="og:title" content="Mathtools - BMI Index Calculator">
+<meta property="og:description" content="Mathtools's BMI Index Calculator. Body Mass Index  is a value derived from the mass and height of a person. The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m², resulting from mass in kilograms and height in metres.">
+<meta property="og:image" content="">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://www.mathtools.live/bmi-index-calculator">
+<meta property="twitter:title" content="Mathtools - BMI Index Calculator">
+<meta property="twitter:description" content="Mathtools's BMI Index Calculator. Body Mass Index  is a value derived from the mass and height of a person. The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m², resulting from mass in kilograms and height in metres.">
+<meta property="twitter:image" content="">
+
+
+    <meta name="keywords" content="bmi calculator in kg and feet, body mass index calculator athletes ,body mass index calculator and chart ,body mass index calculator pediatric ,what's my body mass index calculator ,body mass index calculator for adults,body mass index calculator bmi ,bmi index how to calculate,bmi index calculator,how to body mass index calculation,bmi, body mass index, bmi calculator ,calculation, Calculator, regular Calculator, math, algebra, calculus, mathematics, calci, scientific calculator, calculator with fraction button, calculator date of birth, calculator percentage online,calculator with steps , calculator with remainder, calculator birth date, calculator for money, calculator quadratic equation, calculator emi, calculator gratuity, calculator rate of interest, calculator with exponents, calculator for compound interest, calculator for home loan,calculator for mortgage, calculator home loan">
+{% endblock %}
+
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{% static 'css/bmi_style.css' %}">
+{% endblock stylesheets%}
+
+
+{% block title %} <title>Mathtools - BMI Index Calculator</title> {% endblock %}
+
+
+{% block content %}
+
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-12 col-md-5 col-sm-6 col-lg-6">
+                <div class="one">
+                    <div class="card second-card">
+                        <div class="card-body">
+                            <h1 class="card-title">BMI Index Calculator</h1>
+                            <div class="instructions"><h3>Instructions:</h3></div>
+                            <ul class="instructions">
+                                <li>This is a Body-Mass-Index Calculator.</li>
+                                <li>Given are the empty fields for Weight(in kg) and Height(in feet).</li>
+                                <li>Enter the values in the empty fields according to their respective labels.</li>
+                                <li>Weight must not be less than or equal to 0. Same goes for Height.</li>
+                                <li>If the Index shows 'Invalid', please check whether the enterd values satisfies the conditions.</li>
+                                <li>For BMI < 18.5, Status = Underweight (Tip : You need to put on more weight.)</li>
+                                <li>For BMI > 18.5 and < 25, Status = Normal (Tip : Your BMI is perfectly fine.)</li>
+                                <li>For BMI > 25 and < 30, Status = Overweight (Tip :It is important that you lose some amount of weight in order to improve your health.)</li>
+                                <li>For BMI > 30 Status = Obese (Tip : You have way too much body fat in relation to your height. You must drop some weight.)</li>
+								<li>None of the status applies for Children. Healthy weight ranges change as the height of the child increases.</li>
+                                <li>Please report for any issue.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-7 col-lg-6">
+                <div class="two">
+                    <div class="card">
+                        <div class="card-body">
+                            <form name="form">
+                                <div>
+                                    <input type="button" value="Weight: " disabled class="weight variable">
+                                    <input type="text" class="variable-field" name="weightfield"
+                                        id="weight">
+                                    <span style="color: white;">kg</span>
+                                    <span style="color: white;">;</span>
+                                    <input type="button" value="Height: " disabled class="height variable">
+                                    <input type="text" class="variable-field" name="feet" id="feet" maxlength="1">
+                                    
+                                    <span style="color: white;" class="feet">ft</span>
+                                    <input type="text" class="variable-field" name="inch" id="inch" maxlength="2" minlength="2" value="00">
+                                    <span style="color: white;" class="inch">in</span>
+                                </div>
+                                <input type="button" class="submit-btn" name="textarea" value="Calculate" onclick="bmi_index()">
+                                <div class="ans">
+                                    <input type="button" value="Index: " disabled class="answer-variable">
+                                    <input type="text" class="answer_field_1" name="index answerfield" id="index">
+                                    <span style="color: white;">kg/m <sup>2</sup> </span>
+                                </div>
+                                <div>
+                                    <input type="button" value="Status: " disabled class="answer-variable">
+                                    <input type="text" class="answer_field_2" name="answerfield " id="status">
+                                   <button type="button" class="signal" name="signal" id="signal" value=""></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="{% static 'js/bmi_script.js' %}"></script>
+
+{% endblock %}

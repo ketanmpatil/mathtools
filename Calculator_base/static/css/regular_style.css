@@ -1,0 +1,154 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+body{
+    background-color: #0b0c10!important;
+}
+
+.second-card{
+    margin-top: 110px;
+    background-color: #0b0c10!important;
+    color: #67f7f1;
+    width: 600px!important;
+    font-family: 'Lato', sclear-serif;
+    text-align: start;
+}
+
+.card-title{
+    font-size: 60px;
+    font-family: 'Lobster', cursive;
+}
+
+input:focus {outline:none;}
+
+.card{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    width: 280px;
+    background-color: #0e0f14!important;
+}
+
+.numerics{
+    width: 55px;
+    height: 55px!important;
+    margin-bottom: 4px;
+    border: none;
+    background-color: #0b0c10;
+    color: #67f7f1;
+    font-family: 'Lato', sclear-serif;
+    font-size: 17px;
+    
+}
+
+.textarea{
+    width: 233px;
+    height: 70px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    text-align: right;
+    font-size: 25px;
+    border: none;
+    font-family: 'Lato', sclear-serif;
+    padding-right: 10px;
+    
+}
+
+.textview{
+    width: 233px;
+    height: 50px;
+    margin-top: 20px;
+    padding-right: 10px;
+    text-align: right;
+    font-size: 17px;
+    border: none;
+    font-family: 'Lato', sclear-serif;
+    overflow: scroll;
+    
+}
+
+input.textarea{
+    background-color: #242424;
+    color: white;
+}
+
+input.textview{
+    background-color: #242424;
+    color: white;
+}
+
+
+
+.text{
+    color: #67f7f1;
+    font-family: 'Lobster', cursive;
+    font-size: 10vw;
+}
+
+.smalltext{
+    color: #67f7f1;
+    font-family: 'Lobster', cursive;
+    font-size: 2vw;
+}
+
+.one{
+    text-align: end;
+}
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+
+
+    .second-card{
+        margin-top: 20px;
+        background-color: #0b0c10!important;
+        color: #67f7f1;
+        width: 300px!important;
+        font-family: 'Lato', sclear-serif;
+        text-align: start;
+    }
+    
+    .card-title{
+        font-size: 30px;
+        font-family: 'Lobster', cursive;
+    }
+
+    .card{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 15px;
+        width: 280px;
+    }
+
+    .instructions{
+        font-size: 10px;
+    }
+   
+
+}
+    
+@media all and (min-width: 480px) and (max-width: 768px) { }
+    
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+
+
+    .card-title{
+        font-size: 34px;
+        font-family: 'Lobster', cursive;
+    }
+
+    .second-card{
+        margin-top: 5px;
+        background-color: #0b0c10!important;
+        color: #67f7f1;
+        width: 300px!important;
+        font-family: 'Lato', sclear-serif;
+        text-align: start;
+    }
+
+}
+    
+@media all and (min-width: 1440px) and (max-width: 2560px) { }
+
+   

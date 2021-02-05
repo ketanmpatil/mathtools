@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /accounts/
+Sitemap: https://www.mathtools.live/sitemap.xml
