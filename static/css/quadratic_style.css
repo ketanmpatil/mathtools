@@ -1,0 +1,301 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+body{
+    background-color: #0b0c10!important;
+}
+
+
+
+input:focus {outline:none;}
+
+.card{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 130px;
+    width: 340px!important;
+    background-color: #0e0f14!important;
+    text-align: center;
+}
+
+.eqn{
+    color: #67f7f1;
+    font-family: 'Lato', sclear-serif;
+}
+
+.second-card{
+    margin-top: 110px;
+    background-color: #0b0c10!important;
+    width: 600px!important;
+    color: #67f7f1;
+    font-family: 'Lato', sclear-serif;
+    text-align: start;
+}
+
+.card-title{
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+}
+
+.textarea{
+    width: 233px;
+    height: 70px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    text-align: right;
+    font-size: 25px;
+    border: none;
+    font-family: 'Lato', sclear-serif;
+    padding-right: 10px;
+    
+}
+
+.variable{
+    background-color: #0e0f14;
+    border: none;
+    color: #67f7f1;
+    font-family: 'Lato', sclear-serif;
+}
+
+.answer-variable{
+    background-color: #0e0f14;
+    border: none;
+    color: #67f7f1;
+    font-family: 'Lato', sclear-serif;
+    font-size: 20px;
+}
+
+.variable-field{
+    width: 55px;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    font-size: 15px;
+    border: none;
+    font-family: 'Lato', sclear-serif;
+    padding-right: 10px;
+}
+
+.submit-btn{
+    background-color: #161616;
+    width: 233px;
+    height: 70px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    font-family: 'Lato', sclear-serif;
+    font-size: 30px;
+    color:  #67f7f1;
+}
+
+input.textarea{
+    background-color: #242424;
+    color: white;
+}
+
+input.variable-field{
+    background-color: #242424;
+    color: white;
+}
+
+
+.clear{
+    width: 114px;
+    height: 55px;
+    border: none;
+    background-color:red;
+    color: #67f7f1;
+    font-family: 'Lato', sclear-serif;
+    font-size: 3vh;
+    
+}
+
+.answer_field_1, .answer_field_2{
+    width: 105px;
+    height: 40px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 15px;
+    border: none;
+    font-family: 'Lato', sclear-serif;
+    padding-right: 10px;
+}
+
+
+
+input.answer_field_1{
+    background-color: #242424;
+    color: white;
+}
+
+input.answer_field_2{
+    background-color: #242424;
+    color: white;
+}
+
+
+.one{
+    text-align: start;
+}
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+
+
+    .second-card{
+        margin-top: 15px;
+        background-color: #0b0c10!important;
+        color: #67f7f1;
+        width: 280px!important;
+        font-family: 'Lato', sclear-serif;
+        text-align: start;
+        font-size: 30px;
+    }
+    
+    .card-title{
+        font-size: 15px;
+        font-family: 'Lobster', cursive;
+    }
+
+    .card{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: -20px;
+        width: 290px!important;
+        background-color: #0b0c10!important;
+        font-size: 10px;
+    }
+
+    
+    .instructions{
+        font-size: 10px;
+    }
+
+    .standard{
+        font-size: 15px;
+        font-family: 'Lato', sclear-serif;
+    }
+    
+    .answer_field_1, .answer_field_2{
+        width: 60px;
+        height: 40px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-size: 15px;
+        border: none;
+        font-family: 'Lato', sclear-serif;
+        padding-right: 10px;
+    }
+    
+    
+    .variable-field{
+        width: 35px;
+        height: 30px;
+        margin-bottom: 15px;
+        margin-top: 25px;
+        font-size: 15px;
+        border: none;
+        font-family: 'Lato', sclear-serif;
+        padding-right: 10px;
+    }
+
+    .submit-btn{
+        background-color: #161616;
+        width: 180px;
+        height: 50px;
+        margin-bottom: 15px;
+        border-radius: 50px;
+        font-family: 'Lato', sclear-serif;
+        font-size: 15px;
+        color:  #67f7f1;
+    }
+
+    .answer-variable{
+        font-size: 15px;
+    }
+    
+
+}
+    
+@media all and (min-width: 480px) and (max-width: 768px) { }
+    
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+
+    .second-card{
+        margin-top: 15px;
+        background-color: #0b0c10!important;
+        color: #67f7f1;
+        width: 280px!important;
+        font-family: 'Lato', sclear-serif;
+        text-align: start;
+        font-size: 30px;
+    }
+    
+    .card-title{
+        font-size: 15px;
+        font-family: 'Lobster', cursive;
+    }
+
+    .card{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: -20px;
+        width: 290px!important;
+        background-color: #0b0c10!important;
+        font-size: 10px;
+    }
+
+    
+    .instructions{
+        font-size: 10px;
+    }
+
+    .standard{
+        font-size: 15px;
+        font-family: 'Lato', sclear-serif;
+    }
+    
+    .answer_field_1, .answer_field_2{
+        width: 60px;
+        height: 40px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+        font-size: 15px;
+        border: none;
+        font-family: 'Lato', sclear-serif;
+        padding-right: 10px;
+    }
+    
+    
+    .variable-field{
+        width: 35px;
+        height: 30px;
+        margin-bottom: 15px;
+        margin-top: 25px;
+        font-size: 15px;
+        border: none;
+        font-family: 'Lato', sclear-serif;
+        padding-right: 10px;
+    }
+
+    .submit-btn{
+        background-color: #161616;
+        width: 180px;
+        height: 50px;
+        margin-bottom: 15px;
+        border-radius: 50px;
+        font-family: 'Lato', sclear-serif;
+        font-size: 15px;
+        color:  #67f7f1;
+    }
+
+    .answer-variable{
+        font-size: 15px;
+    }
+    
+
+}
+    
+@media all and (min-width: 1440px) and (max-width: 2560px) { }
+
+   

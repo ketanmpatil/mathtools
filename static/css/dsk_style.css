@@ -1,0 +1,268 @@
+*{
+    margin: auto;
+    padding: auto;
+}
+
+body{
+    background-color: #0b0c10!important;
+}
+
+input:focus {outline:none;}
+
+.card{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 130px;
+    width: 450px!important;
+    background-color: #0e0f14!important;
+    text-align: start;
+}
+
+
+.second-card{
+    margin-top: 110px;
+    background-color: #0b0c10!important;
+    width: 600px!important;
+    color: #67f7f1;
+    font-family: 'Lato', sclear-serif;
+    text-align: start;
+}
+
+.card-title{
+    font-size: 40px;
+    font-family: 'Lobster', cursive;
+}
+
+
+
+.variable{
+    background-color: #0e0f14;
+    border: none;
+    color: #67f7f1;
+    font-family: 'Lato', sclear-serif;
+}
+
+
+.variable-field{
+    user-select: all;
+    width: 350px!important;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    font-size: 15px;
+    border: none;
+    font-family: 'Lato', sclear-serif;
+    padding-right: 10px;
+}
+
+#Copybtn{
+    border:none;
+    height: 30px;
+    background-color: #161616;
+    color: white;
+    font-family: 'Lato', sclear-serif;
+}
+
+
+.submit-btn{
+    margin-left: 128px;
+    margin-right: 100px;
+    background-color: #161616;
+    width: 133px;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    font-family: 'Lato', sclear-serif;
+    font-size: 20px;
+    color:  #67f7f1;
+}
+
+input.textarea{
+    background-color: #242424;
+    color: white;
+}
+
+input.variable-field{
+    background-color: #242424;
+    color: white;
+}
+
+
+.one{
+    text-align: start;
+}
+
+
+
+@media all and (min-width: 320px) and (max-width: 480px) {
+
+  
+
+    .second-card{
+        margin-top: 15px;
+        background-color: #0b0c10!important;
+        color: #67f7f1;
+        width: 280px!important;
+        font-family: 'Lato', sclear-serif;
+        text-align: start;
+        font-size: 30px;
+    }
+    
+    .card-title{
+        font-size: 15px;
+        font-family: 'Lobster', cursive;
+    }
+
+    .card{
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: -20px;
+        width: 290px!important;
+        font-size: 10px;
+    }
+
+    .card-body{
+        width: 250px!important;
+    }
+
+    .instructions{
+        font-size: 10px;
+    }
+
+    .standard{
+        font-size: 15px;
+        font-family: 'Lato', sclear-serif;
+    }
+
+    #weight{
+        width: 95px;
+    }
+
+    .variable-field{
+        width: 160px!important;
+        height: 30px;
+        margin-bottom: 15px;
+        margin-top: 25px;
+        font-size: 15px;
+        border: none;
+        font-family: 'Lato', sclear-serif;
+        padding-right: 10px;
+    }
+
+    .submit-btn{
+        background-color: #161616;
+        width: 100px;
+        height: 40px;
+        margin-left: 50px;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        border-radius: 50px;
+        font-family: 'Lato', sclear-serif;
+        font-size: 15px;
+        color:  #67f7f1;
+    }
+
+    .answer-variable, .variable{
+        font-size: 15px;
+    }
+
+    #Copybtn{
+        border:none;
+        height: 30px;
+        background-color: #161616;
+        color: white;
+        font-family: 'Lato', sclear-serif;
+        font-size: 15px;
+    }
+    
+    
+
+}
+
+    
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+
+ 
+    .second-card{
+        margin-top: 15px;
+        background-color: #0b0c10!important;
+        color: #67f7f1;
+        width: 280px!important;
+        font-family: 'Lato', sclear-serif;
+        text-align: start;
+        font-size: 30px;
+    }
+    
+    .card-title{
+        font-size: 15px;
+        font-family: 'Lobster', cursive;
+    }
+
+    .card{
+        margin-right: auto!important;
+        margin-left: auto!important;
+        margin-top: 20px;
+        width: 340px!important;
+        font-size: 10px;
+    }
+
+    
+    
+    .instructions{
+        font-size: 10px;
+    }
+
+    .standard{
+        font-size: 15px;
+        font-family: 'Lato', sclear-serif;
+    }
+ 
+    .variable-field{
+        width: 215px!important;
+        height: 30px;
+        margin-bottom: 15px;
+        margin-top: 25px;
+        font-size: 15px;
+        border: none;
+        font-family: 'Lato', sclear-serif;
+        padding-right: 10px;
+    }
+
+    .submit-btn{
+        background-color: #161616;
+        width: 180px;
+        height: 50px;
+        margin-left: 40px;
+        margin-bottom: 15px;
+        border-radius: 50px;
+        font-family: 'Lato', sclear-serif;
+        font-size: 15px;
+        color:  #67f7f1;
+    }
+
+    .answer-variable, .variable{
+        font-size: 10px;
+    }
+    
+    #Copybtn{
+        border:none;
+        height: 30px;
+        background-color: #161616;
+        color: white;
+        font-family: 'Lato', sclear-serif;
+        font-size: 12px;
+    }
+    
+
+    
+
+    .card-body{
+        width: 300px;
+    }
+
+   
+}
+    
+@media all and (min-width: 1440px) and (max-width: 2560px) { }
+
+   
