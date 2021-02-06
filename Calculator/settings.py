@@ -29,7 +29,7 @@ SECRET_KEY = os.getenv('SECRET_KEY','%^h33&ue$@=*eys716-(iw6@otu(%%a7eu@dyf26&*n
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'https://mathtools.azurewebsites.net','https://www.mathtools.live','mathtools.azurewebsites.net','http://mathtools.azurewebsites.net','http://www.mathtools.live','www.mathtools.live','127.0.0.1'
