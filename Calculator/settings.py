@@ -32,7 +32,7 @@ SECRET_KEY = os.getenv('SECRET_KEY','%^h33&ue$@=*eys716-(iw6@otu(%%a7eu@dyf26&*n
 DEBUG = False
 
 ALLOWED_HOSTS = [
-    'https://mathtools.azurewebsites.net','https://www.mathtools.live','mathtools.azurewebsites.net','http://mathtools.azurewebsites.net','http://www.mathtools.live','www.mathtools.live','127.0.0.1'
+    'mathtools.herokuapp.com','127.0.0.1'
 ]
 
 
@@ -117,15 +117,11 @@ WSGI_APPLICATION = 'Calculator.wsgi.application'
 
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES={
-   'default':{
-      'ENGINE':'django.db.backends.postgresql_psycopg2',
-      'NAME':'mathtoolsdb',
-      'USER':'postgres',
-      'PASSWORD':'Jimmy@0206',
-      'HOST':"127.0.0.1",
-      'PORT':'5432',
-   }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
 }
 
 
